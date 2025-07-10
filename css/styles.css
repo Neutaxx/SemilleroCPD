@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  background: #0F385A;
+  padding-top: 100px;  /* Espacio para header sticky más alto */
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0F385A;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+ 
+}
+
+.navbar {
+  max-width: 1200px;   /* Limita ancho máximo */
+  margin: 0 auto;      /* Centra contenido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;  /* Espacio interior horizontal y vertical */
+}
+
+.navbar .logo {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #1FB2DE;
+}
+
+.gradient-text {
+   background: linear-gradient(90deg, #1FB2DE, #15BECE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero .badge {
+  background: #FFFFFF;
+  color: #0F385A;
+  padding: 8px 15px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn.primary {
+  background: #1FB2DE;
+  color: #FFFFFF;
+}
+
+.btn.primary:hover {
+  background: #15BECE;
+}
+
+.btn.secondary {
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.miembros {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.miembros h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.miembro-lider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.miembro-lider .miembro-card {
+  max-width: 300px;
+}
+
+.miembros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.miembro-card {
+  background: #F5F5F5;
+  border-radius: 12px;
+  padding: 20px;
+  color: #333333;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.miembro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.miembro-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.miembro-card h3 {
+  margin: 10px 0 5px;
+}
+
+.miembro-card p {
+  margin: 4px 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+footer {
+  background: #0A263D;
+  color: #FFFFFF;
+  padding: 60px 50px 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left p {
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color:  #1FB2DE;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  text-align: justify; /* alineación mejorada */
+}
+
+#particles-js canvas {
+  background: transparent;
+}
+
+/* Fondo animado de texto POLITÉCNICO GRANCOLOMBIANO */
+.bg-text {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.bg-text svg {
+  width: 100%;
+  height: 200%;
+  animation: moveText 20s linear infinite;
+}
+
+.bg-text text {
+  fill: rgba(255, 255, 255, 0.05);
+  font-size: 60px;
+  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes moveText {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
