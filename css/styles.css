@@ -294,6 +294,12 @@ footer {
   background: transparent;
 }
 
+.footer-bottom .firma {
+  color: #4FB3FF; /* O tu azul cielo de acento */
+  font-weight: 600;
+}
+
+
 /* Fondo animado de texto POLITÉCNICO GRANCOLOMBIANO */
 .bg-text {
   position: fixed;
