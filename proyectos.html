@@ -42,7 +42,8 @@
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="objetivos.html">Objetivos</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="proyectos.html">Línea De Tiempo</a></li>
+                <li><a href="proyecto_individual.html">Proyecto</a></li>
                 <li><a href="contenido.html">Contenido</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
@@ -55,39 +56,52 @@
             <p>Conoce los hitos más importantes y actividades desarrolladas por nuestro semillero.</p>
 
             <div class="timeline-container">
+
+
                 <div class="timeline-item left" data-aos="fade-right">
                     <div class="timeline-content">
-                        <span class="badge azul">Conferencia</span>
-                        <h3>Conferencia Internacional</h3>
-                        <p class="date">14 Marzo 2024</p>
-                        <p>Evento sobre tendencias y buenas prácticas.</p>
+                        <span class="badge azul">Proyecto</span>
+                        <h3>Proyecto principal</h3>
+                        <p class="date">14 Febrero 2024</p>
+                        <p>Narrativas de legitimidad y estrategias performativas Palestinas en el activismo de instagram durante el conflicto Israel-Palestina.</p>
+                    </div>
+                </div>
+
+                
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="badge verde">Universidad Santo Tómas</span>
+                        <h3>Presentación trabajo</h3>
+                        <p class="date">10 Abril 2024</p>
+                        <p>Presentación en evento Encuentro Nacional de Semilleros.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="badge azul">Clase espejo</span>
+                        <h3>Conocimiento compartido</h3>
+                        <p class="date">15 Noviembre 2024</p>
+                        <p>Oportunidad de presenciar clase espejo con estudiantes de la universidad UTADEO.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item right" data-aos="fade-left">
                     <div class="timeline-content">
-                        <span class="badge verde">Visita Técnica</span>
-                        <h3>Visita a Empresa de Medios</h3>
-                        <p class="date">5 Abril 2024</p>
-                        <p>Recorrido de exploración profesional.</p>
+                        <span class="badge verde">Taller</span>
+                        <h3>Representación artística</h3>
+                        <p class="date">22 Noviembre 2024</p>
+                        <p>Representación con legos del conflicto</p>
                     </div>
                 </div>
 
                 <div class="timeline-item left" data-aos="fade-right">
                     <div class="timeline-content">
-                        <span class="badge azul">Hackathon</span>
-                        <h3>Hackathon Nacional</h3>
-                        <p class="date">22 Mayo 2024</p>
-                        <p>Competencia de ideas y prototipos.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item right" data-aos="fade-left">
-                    <div class="timeline-content">
-                        <span class="badge verde">Publicación</span>
-                        <h3>Artículo en Revista Indexada</h3>
-                        <p class="date">10 Junio 2024</p>
-                        <p>Investigación divulgada a nivel nacional.</p>
+                        <span class="badge azul">Viaje</span>
+                        <h3>Viaje a Popayán</h3>
+                        <p class="date">27 Marzo 2025</p>
+                        <p>Viaje presentación semillero en AFACOM 2025</p>
                     </div>
                 </div>
             </div>
@@ -122,7 +136,8 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="objetivos.html">Objetivos</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="proyectos.html">Línea De Tiempo</a></li>
+                    <li><a href="proyecto_individual.html">Proyecto</a></li>
                     <li><a href="contenido.html">Contenido</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                 </ul>
@@ -167,24 +182,39 @@
             item.addEventListener("click", () => {
                 switch (index) {
                     case 0:
-                        modalTitle.innerText = "Conferencia Internacional";
-                        modalText.innerText = "Reflexionamos sobre la importancia de usar la tecnología de forma consciente y responsable para garantizar un entorno digital seguro y ético.";
-                        modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>';
+                        modalTitle.innerText = "Proyecto";
+                        modalText.innerText = modalText.innerHTML = "La investigación analiza las estrategias utilizadas por tres activistas palestinos en Instagram para legitimar su causa y desafiar estereotipos impuestos por medios de comunicación y gobiernos. Estos activistas comparten imágenes, testimonios y videos que combinan elementos emocionales y llamados a la acción, buscando concientizar y movilizar audiencias globales. Se emplea un enfoque cualitativo con un análisis multimodal y de contenido, privilegiando publicaciones con alta interacción en Instagram y medios. Los resultados preliminares indican que las narrativas de los activistas se enfocan en construir identidad cultural, denunciar violaciones de derechos humanos y promover la causa palestina. A través de testimonios visuales, sus publicaciones influyen en la percepción pública y transforman Instagram en un espacio de resistencia contra discursos hegemónicos.";
+                        modalMedia.innerHTML = '<img src="img/Imagen1.jpeg" alt="Descripción" style="display:block; margin:20px auto; max-width:100%; max-height:5000px; border-radius:8px;">';
                         break;
                     case 1:
-                        modalTitle.innerText = "Visita Técnica";
-                        modalText.innerText = "Este proyecto destaca la responsabilidad en el uso de herramientas tecnológicas, fomentando la protección de la información y el bienestar digital.";
-                        modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>';
+                        modalTitle.innerText = "Universidad Santo Tomás";
+                        modalText.innerText = `
+                        En esta oportunidad presentamos nuestro trabajo en el XII Encuentro Nacional de Semilleros, realizado en la Universidad Santo Tomás, el 10 de abril de 2024, en el marco de la XIV Jornadas de Investigación en Comunicación, de la Facultad de Comunicación Social para la Paz. Este era la primera vez que presentábamos nuestro proyecto por fuera de la universidad.
+                        
+                        Fue una experiencia gratificante, ye que vimos otros proyectos de otras universidades los cuales fueron muy interesantes debido a que estaban iniciando como el de nosotros. También lo recordamos con nostalgia ya que apenas este proyecto esta empezando a dar sus frutos.
+                        `;
+                        modalMedia.innerHTML = '<img src="img/SantoTomas.jpeg" alt="Descripción" style="display:block; margin:20px auto; max-width:100%; max-height:5000px; border-radius:8px;">';
                         break;
                     case 2:
-                        modalTitle.innerText = "Hackathon Nacional";
-                        modalText.innerText = "Analizamos cómo la gestión adecuada de la tecnología puede impulsar la creatividad sin descuidar la privacidad y la seguridad de los datos.";
-                        modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>';
+                        modalTitle.innerText = "Clase Espejo";
+                        modalText.innerText = "En esta oportunidad nos encontrábamos en una clase con nuestra directora de semillero llamada “Análisis y visualización de datos” donde fue una clase muy productiva ya que hicimos las tablas de Excel entre otros aportes que nos ayudaron en nuestro proyecto mas adelante. En este día se hizo una clase espejo con los estudiantes de la universidad UTADEO donde se presentaban proyectos de ambas partes, donde el de nosotros se destaco ya que era un proyecto de semillero y trataba temas de interés. Nos ayudaron mucho la retroalimentación y las felicitaciones recibidas por la otra universidad. ";
+                        modalMedia.innerHTML = '<img src="img/ClaseEspejo.jpg" alt="Descripción" style="display:block; margin:20px auto; max-width:100%; max-height:5000px; border-radius:8px;">';
                         break;
                     case 3:
-                        modalTitle.innerText = "Artículo en Revista Indexada";
-                        modalText.innerText = "Abordamos estrategias para fomentar un uso equilibrado de los recursos tecnológicos, promoviendo un desarrollo sostenible y ético.";
-                        modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>';
+                        modalTitle.innerText = "Representación artística";
+                        modalText.innerText = "En esta oportunidad en la clase Taller de producción editorial decidimos tomarnos la presentación final para hacer unas representaciones artísticas frente a nuestro trabajo de semillero. 	En esta decidimos recrear algunas representaciones como: una pequeña escala en lego sobre el conflicto, una muestra de teatro y una cartelera con pintura roja frente al genocidio de palestina. Este fue un pequeño producto independiente el cual realizamos pero nunca se subió se mostro públicamente.  ";
+                        modalMedia.innerHTML = '<img src="img/LegoPalestina.jpg" alt="Descripción" style="display:block; margin:20px auto; max-width:100%; max-height:5000px; border-radius:8px;">';
+                        break;    
+                    case 4:
+                        modalTitle.innerText = "Viaje a Popayán";
+                        modalText.innerText = modalText.innerHTML = `
+                        En esta ocasión gracias a la directora del semillero, tuvimos la oportunidad de viajar a Popayán a presentar nuestro trabajo de semillero en AFACOM 2025. Este es un congreso nacional e internacional de comunicación y también es un encuentro de semilleros de investigación. 
+
+                        En esta experiencia tuvimos el privilegio de participar en la mesa número 8 en la cual se encontraban como profesores y estudiantes enseñándonos sus proyectos, ellos venían de diferentes partes de Colombia y fue muy retroalimentador ver diferentes iniciativas de investigación las cuales eran muy diversos.
+
+                        Por nuestra parte se considera que nos fue muy bien, hubo mucha gente interesada en nuestra investigación al punto de que nos retroalimentaron, recibimos consejos para mejorarla, nos mostraron posibles líneas investigativas las cuales podríamos seguir y aun mas satisfactoria unas felicitaciones por investigar un tema tan complejo y controversial, realizando una labor social la cual es la exposición de este caso para que se haga más conocido y generar conciencia social.
+                        `;
+                        modalMedia.innerHTML = '<img src="img/PopayanHorizontal.jpeg" alt="Descripción" style="display:block; margin:20px auto; max-width:100%; max-height:5000px; border-radius:8px;">';
                         break;
                     default:
                         modalTitle.innerText = "Proyecto";
@@ -212,6 +242,8 @@
             "retina_detect": true
         });
     </script>
+
+    
 </body>
 
 </html>
