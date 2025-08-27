@@ -73,10 +73,11 @@
                     <img src="img/Miniatura Podcast Quiñones.jpeg" alt="Podcast">
                     <h3>Podcast: ¿Redes sociales que promueven la censura?</h3>
                 </div>
-                <div class="contenido-card podcast" data-aos="fade-up">
-                    <img src="img/Poli.png" alt="Podcast">
-                    <h3>Podcast: Estrategias Mediáticas</h3>
+                <div class="contenido-card post" data-aos="fade-up">
+                    <img src="img/Postersemillero.jpg" alt="Post">
+                    <h3>Poster: VIII Encuentro Académico de ACICOM</h3>
                 </div>
+                
 
                 <!-- Videos -->
                 <div class="contenido-card animacion" data-aos="fade-up">
@@ -84,14 +85,14 @@
                     <h3>Animación: Voces digitales en Palestina</h3>
                 </div>
                 <div class="contenido-card video" data-aos="fade-up">
-                    <img src="img/Poli.png" alt="Video">
-                    <h3>Video: Opinión Estudiantil</h3>
+                    <img src="img/videoig1.png" alt="Video">
+                    <h3>Video: Ultima voluntad periodista</h3>
                 </div>
 
                 <!-- Animaciones -->
                 <div class="contenido-card video" data-aos="fade-up">
-                    <img src="img/Poli.png" alt="Animación">
-                    <h3>Animación: Redes Sociales</h3>
+                    <img src="img/videoig2.png" alt="Video">
+                    <h3>Animación: Vivimos en la hunillación y la degradación</h3>
                 </div>
                 <div class="contenido-card animacion" data-aos="fade-up">
                     <img src="img/Poli.png" alt="Animación">
@@ -99,9 +100,9 @@
                 </div>
 
                 <!-- Posts -->
-                <div class="contenido-card post" data-aos="fade-up">
-                    <img src="img/Postersemillero.jpg" alt="Post">
-                    <h3>Poster: VIII Encuentro Académico de ACICOM</h3>
+                <div class="contenido-card podcast" data-aos="fade-up">
+                    <img src="img/Poli.png" alt="Podcast">
+                    <h3>Podcast: Estrategias Mediáticas</h3>
                 </div>
                 <div class="contenido-card post" data-aos="fade-up">
                     <img src="img/Poli.png" alt="Post">
@@ -149,9 +150,9 @@
             </div>
             <div class="footer-contact">
                 <h4>Contacto</h4>
-                <p>📧 semillero@universidad.edu</p>
-                <p>📞 +57 (1) 234-5678</p>
-                <p>📍 Politécnico Grancolombiano, Bogotá</p>
+                <p>📧 semillerocpd@gmail.com</p>
+        <p>📍 Edificio de Investigación<br> Politécnico Grancolombiano Institución Universitaria<br> Bogotá, Colombia
+        </p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -208,28 +209,48 @@
                         modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/Icm-T7VrFI0?si=7nYRzBOfuvF5i_Q1" frameborder="0" allowfullscreen></iframe>';
                         break;
                     case 1:
-                        modalTitle.innerText = "Podcast: Estrategias Mediáticas";
-                        modalMedia.innerHTML = '<audio controls src="audio/podcast2.mp3" style="width:100%;"></audio>';
+                        modalTitle.innerText = "Poster: VIII Encuentro Académico de ACICOM";
+                        modalMedia.innerHTML = '<img src="img/Postersemillero.jpg" alt="Post" style="width:100%; border-radius:8px;">';
                         break;
+                    
                     case 2:
                         modalTitle.innerText = "Animación: Voces digitales en palestina";
                         modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/K8n1xrBmVCw?si=8vNEUeEsgkJTIh8b" frameborder="0" allowfullscreen></iframe>';
                         break;
                     case 3:
-                        modalTitle.innerText = "Video: Opinión Estudiantil";
-                        modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>';
-                        break;
+    modalTitle.innerText = "Video: Ultima voluntad periodista";
+    modalMedia.innerHTML = `
+        <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DNV3xFFR6gj/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px rgba(0,0,0,0.5), 0 1px 10px rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+        </blockquote>
+    `;
+    if (window.instgrm) {
+        window.instgrm.Embeds.process();
+    }
+    break;
+
                     case 4:
-                        modalTitle.innerText = "Animación: Redes Sociales";
-                        modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID3" frameborder="0" allowfullscreen></iframe>';
-                        break;
+    modalTitle.innerText = "Video: Vivimos en la hunillación y la degradación";
+    modalMedia.innerHTML = `
+        <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DNk1IQOoVnN/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14">
+        </blockquote>
+    `;
+    if (window.instgrm) {
+        window.instgrm.Embeds.process();
+    }
+    break;
+
                     case 5:
                         modalTitle.innerText = "Animación: Educación Responsable";
                         modalMedia.innerHTML = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID4" frameborder="0" allowfullscreen></iframe>';
                         break;
                     case 6:
-                        modalTitle.innerText = "Poster: VIII Encuentro Académico de ACICOM";
-                        modalMedia.innerHTML = '<img src="img/Postersemillero.jpg" alt="Post" style="width:100%; border-radius:8px;">';
+                        modalTitle.innerText = "Podcast: Estrategias Mediáticas";
+                        modalMedia.innerHTML = '<audio controls src="audio/podcast2.mp3" style="width:100%;"></audio>';
                         break;
                     case 7:
                         modalTitle.innerText = "Post: Tips de Comunicación";
@@ -261,6 +282,8 @@
             "retina_detect": true
         });
     </script>
+    <script async src="//www.instagram.com/embed.js"></script>
+
 </body>
 
 </html>
