@@ -4,18 +4,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semillero Comunicación y Prácticas Digitales</title>
+
+  <!-- SEO primario -->
+  <title>Semillero Comunicación y Prácticas Digitales | Politécnico Grancolombiano</title>
+  <meta name="description" content="Semillero de investigación del Politécnico Grancolombiano dedicado a la comunicación digital, las narrativas alternativas y el análisis crítico de redes sociales en contextos de conflicto." />
+  <meta name="keywords" content="semillero de investigación, comunicación digital, prácticas digitales, Politécnico Grancolombiano, narrativas digitales, análisis de redes sociales, activismo digital, comunicación social" />
+  <meta name="author" content="Semillero Comunicación y Prácticas Digitales - Politécnico Grancolombiano" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://semillerocpd.co/index.html" />
+
+  <!-- Open Graph / Redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Semillero Comunicación y Prácticas Digitales" />
+  <meta property="og:description" content="Espacio de formación e investigación sobre comunicación digital, narrativas alternativas y análisis crítico de redes sociales del Politécnico Grancolombiano." />
+  <meta property="og:image" content="img/Logosemillero.png" />
+  <meta property="og:locale" content="es_CO" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="img/logosemillero.png" type="image/png">
 
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tipografías del Manual de Identidad Poli: Open Sans (web) + Poppins (titulares) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=10" />
 
- 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Datos estructurados (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "Semillero Comunicación y Prácticas Digitales",
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "Politécnico Grancolombiano"
+    },
+    "description": "Semillero de investigación dedicado a la comunicación digital, las narrativas alternativas y el análisis crítico de redes sociales en contextos de conflicto.",
+    "url": "https://semillerocpd.co",
+    "email": "semillerocpd@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bogotá",
+      "addressCountry": "CO"
+    },
+    "sameAs": [
+      "https://www.instagram.com/semillerocpd",
+      "https://www.tiktok.com/@semillerocpd"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -40,16 +78,20 @@
 
   
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
       <div class="logo">
-  <a href="index.html" style="display: flex; align-items: center; gap: 8px;">
-    <img src="img/Logosemillero.png" alt="Logo" style="height: 50px;">
-    Comunicación y Prácticas <span class="gradient-text">Digitales</span>
-  </a>
-</div>
+        <a href="index.html">
+          <img src="img/Logosemillero.png" alt="Logo Semillero Comunicación y Prácticas Digitales">
+          Comunicación y Prácticas <span class="gradient-text">Digitales</span>
+        </a>
+      </div>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="objetivos.html">Objetivos</a></li>
         <li><a href="proyectos.html">Línea De Tiempo</a></li>
         <li><a href="proyecto_individual.html">Proyecto</a></li>
@@ -60,88 +102,195 @@
   </header>
 
  
+  <main>
   <div class="container">
-    
-    <main class="hero" data-aos="fade-up">
-      <span class="badge">Semillero de Investigación</span>
-      <h1>Comunicación y <br> Prácticas <span class="gradient-text">Digitales</span></h1>
-      <p>
-        El Semillero Comunicación y Prácticas Digitales es un espacio de formación e investigación donde se estudian las
-        dinámicas de los medios contemporáneos, las narrativas digitales y sus implicaciones sociales. Dentro del ámbito
-        de este proceso, se ha delineado una propuesta sobre el conflicto palestino-israelí, en la que se abordan las
-        formas en que se construyen narrativas de legitimidad y estrategias performativas desde el activismo digital, en
-        particular en Instagram. Esta propuesta intenta sobre todo reflexionar críticamente sobre el impacto de la
-        comunicación en contextos de conflicto y resistencia.
+
+    <section class="hero-poster">
+      <div class="hero-mark" aria-hidden="true">
+        <img src="img/Logosemillero.png" alt="">
+      </div>
+
+      <p class="hero-kicker reveal">
+        <span class="accent">Semillero de investigación</span>
+        <span class="rule"></span>
+        <span>Politécnico Grancolombiano</span>
       </p>
-      <div class="buttons">
-        <a href="proyecto_individual.html" class="btn primary">Conoce más</a>
-      </div>
-    </main>
 
-    
-    <section class="miembros" data-aos="fade-up">
-      <h2>Nuestros Miembros</h2>
+      <h1 class="reveal">
+        Comunicación
+        <span class="l2">y Prácticas <span class="gradient-text">Digitales</span></span>
+      </h1>
 
-      
-      <div class="miembro-lider">
-        <div class="miembro-card">
-          <img src="img/profesora.jpeg" alt="Doria Constanza Lizcano">
-          <h3>Doria Constanza Lizcano</h3>
-          
-          <p><strong>Sobre mí:</strong></p>
-          <p>Soy docente e investigadora del Politécnico Grancolombiano. Doctora en Ciencias de la Educación. Lidero el Semillero de Comunicación y prácticas digitales y soy una afortunada de trabajar en equipo con mis estudiantes. Mi trayectoria se destaca por el análisis de medios, los estudios de género y sobre todo por un compromiso con la formación y el desarrollo del pensamiento académico.</p>
+      <div class="hero-foot reveal">
+        <p class="lead">
+          Un espacio de formación e investigación donde estudiamos las dinámicas de los medios
+          contemporáneos, las narrativas digitales y sus implicaciones sociales — con una mirada
+          crítica sobre el activismo digital en contextos de conflicto y resistencia.
+        </p>
+        <div class="buttons">
+          <a href="proyecto_individual.html" class="btn primary">Conoce el proyecto</a>
+          <a href="#equipo" class="btn secondary">Nuestro equipo</a>
         </div>
       </div>
 
-      
-      <div class="miembros-grid">
-        <div class="miembro-card">
-          <img src="img/bolliviris.jpg" alt="Juan Esteban Quiñones">
-          <h3>Juan Esteban Quiñones</h3>
-          <p><strong>Comunicador social en formación</strong></p>
-          <p><strong>Sobre mí:</strong></p>
-          <p>Soy Juan Esteban Quiñones, estudiante de quinto semestre de Comunicación Social y Periodismo, así como
-            también de Negocios Internacionales. Participo activamente en el semillero de Comunicación y Prácticas
-            Digitales, investigando temas relacionados con el periodismo, aplicando habilidades narrativas, ética
-            profesional y análisis cualitativo y cuantitativo.</p>
-        </div>
-
-        <div class="miembro-card">
-          <img src="img/panamiguel.jpg" alt="Miguel Angel Borda">
-          <h3>Miguel Angel Borda</h3>
-          <p><strong>Comunicador social en formación</strong></p>
-          <p><strong>Sobre mí:</strong></p>
-          <p>Mi nombre es Miguel Ángel Borda, soy estudiante de comunicación social y periodismo además de mercadeo y
-            publicidad, estoy cursando quinto semestre. Participo activamente en el semillero de Comunicación y
-            Prácticas digitales abarcando temáticas de conflicto a nivel internacional, con habilidades en el análisis
-            de audiencia y del discurso.</p>
-        </div>
-
-        <div class="miembro-card">
-          <img src="img/gigi.jpeg" alt="Andrea Gisella Lizarazo Orostegui">
-          <h3>Andrea Gisella Lizarazo Orostegui</h3>
-          <p><strong>Comunicadora social en formación</strong></p>
-          <p><strong>Sobre mí:</strong></p>
-          <p>Soy Andrea Gisella Lizarazo Orostegui, estudiante de quinto semestre de Comunicación Social y Periodismo,
-            así como también de Derecho. Participo activamente en el semillero de Comunicación y Prácticas Digitales,
-            investigando temas relacionados con el periodismo, aplicando habilidades narrativas, ética profesional y
-            análisis cualitativo y cuantitativo.</p>
-        </div>
-
-        <div class="miembro-card">
-          <img src="img/Nicolasbohorquez.jpg" alt="Nicolás Bohórquez Tejada">
-          <h3>Nicolás Bohórquez Tejada</h3>
-          <p><strong>Estudiante de ingeniería en ciencia de datos</strong></p>
-          <p><strong>Sobre mí:</strong></p>
-          <p>Soy Nicolás Bohórquez Tejada, estudiante de octavo semestre de ingeniería en ciencia de datos. Participo activamente en el semillero de comunicación y practicas digitales, brindando soporte en temas de visualización de datos y codificación de estos mismos</p>
-        </div>
-
-        
+      <div class="hero-stats reveal" aria-label="El semillero en cifras">
+        <div class="stat"><div class="num" data-count="6">6</div><div class="label">Objetivos de investigación</div></div>
+        <div class="stat"><div class="num" data-count="5">5</div><div class="label">Integrantes activos</div></div>
+        <div class="stat"><div class="num" data-count="4">4</div><div class="label">Disciplinas convergentes</div></div>
+        <div class="stat"><div class="num" data-count="2024">2024</div><div class="label">Año de creación</div></div>
       </div>
     </section>
-  </div>
 
- 
+    <!-- Líneas de investigación -->
+    <section class="lineas reveal">
+      <div class="section-head">
+        <span class="kicker">En qué trabajamos</span>
+        <h2>Líneas de investigación</h2>
+        <p>Nuestro trabajo se articula alrededor de cuatro ejes que conectan la comunicación digital
+           con el pensamiento crítico y el compromiso social.</p>
+      </div>
+
+      <div class="lineas-grid">
+        <article class="linea-card" style="--accent: #1FB2DE">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M3 12h18"/>
+              <path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/>
+            </svg>
+          </div>
+          <h3>Narrativas digitales</h3>
+          <p>Cómo se construyen relatos de legitimidad y estrategias performativas en las plataformas contemporáneas.</p>
+        </article>
+
+        <article class="linea-card" style="--accent: #A6CE38">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="7" r="2.4"/>
+              <circle cx="18" cy="6" r="2.4"/>
+              <circle cx="17" cy="18" r="2.4"/>
+              <circle cx="6.5" cy="16" r="2.4"/>
+              <path d="M8.3 8.4l7 7M8.4 7.2h7.2M6.2 9.4v4.2M16.2 8.2l-8 6.4"/>
+            </svg>
+          </div>
+          <h3>Análisis de redes sociales</h3>
+          <p>Lectura crítica de algoritmos, censura digital y la afectividad como herramienta política.</p>
+        </article>
+
+        <article class="linea-card" style="--accent: #FBAF17">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="2.5" width="6" height="11" rx="3"/>
+              <path d="M5.5 11a6.5 6.5 0 0 0 13 0"/>
+              <path d="M12 17.5V21M8.5 21h7"/>
+            </svg>
+          </div>
+          <h3>Periodismo y DD.&nbsp;HH.</h3>
+          <p>Reflexión transdisciplinar sobre el papel del periodismo en situaciones de guerra y ocupación.</p>
+        </article>
+
+        <article class="linea-card" style="--accent: #EC0677">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="10.5" cy="10.5" r="6.5"/>
+              <path d="M15.4 15.4L21 21"/>
+              <path d="M8 10.5h5M10.5 8v5"/>
+            </svg>
+          </div>
+          <h3>Métodos cualitativos</h3>
+          <p>Análisis del discurso, análisis visual y orientación etnográfica aplicados al contenido digital.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="miembros reveal" id="equipo">
+      <div class="section-head">
+        <span class="kicker">Nuestro Equipo</span>
+        <h2>Quiénes lo hacemos posible</h2>
+        <p>Investigadores y estudiantes que dan vida al semillero desde distintas disciplinas.</p>
+      </div>
+
+      <div class="miembro-lider">
+        <div class="foto">
+          <img src="img/profesora.jpeg" alt="Doria Constanza Lizcano, líder del semillero">
+        </div>
+        <div class="miembro-lider-texto">
+          <span class="rol">Líder del semillero</span>
+          <h3>Doria Constanza Lizcano</h3>
+          <p>Docente e investigadora del Politécnico Grancolombiano. Doctora en Ciencias de la Educación.
+            Lidera el Semillero de Comunicación y Prácticas Digitales y es una afortunada de trabajar en equipo
+            con sus estudiantes. Su trayectoria se destaca por el análisis de medios, los estudios de género y,
+            sobre todo, por un compromiso con la formación y el desarrollo del pensamiento académico.</p>
+        </div>
+      </div>
+
+
+      <div class="miembros-grid">
+        <article class="miembro-card" tabindex="0">
+          <img src="img/bolliviris.jpg" alt="Juan Esteban Quiñones" loading="lazy">
+          <div class="miembro-info">
+            <span class="rol">Comunicador social en formación</span>
+            <h3>Juan Esteban Quiñones</h3>
+            <p class="bio">Estudiante de quinto semestre de Comunicación Social y Periodismo, y de Negocios
+              Internacionales. Investiga temas de periodismo aplicando habilidades narrativas, ética profesional
+              y análisis cualitativo y cuantitativo.</p>
+          </div>
+        </article>
+
+        <article class="miembro-card" tabindex="0">
+          <img src="img/panamiguel.jpg" alt="Miguel Ángel Borda" loading="lazy">
+          <div class="miembro-info">
+            <span class="rol">Comunicador social en formación</span>
+            <h3>Miguel Ángel Borda</h3>
+            <p class="bio">Estudiante de quinto semestre de Comunicación Social y Periodismo, además de Mercadeo y
+              Publicidad. Aborda temáticas de conflicto internacional, con habilidades en análisis de audiencia
+              y del discurso.</p>
+          </div>
+        </article>
+
+        <article class="miembro-card" tabindex="0">
+          <img src="img/gigi.jpeg" alt="Andrea Gisella Lizarazo Orostegui" loading="lazy">
+          <div class="miembro-info">
+            <span class="rol">Comunicadora social en formación</span>
+            <h3>Andrea Gisella Lizarazo</h3>
+            <p class="bio">Estudiante de quinto semestre de Comunicación Social y Periodismo, así como de Derecho.
+              Investiga temas relacionados con el periodismo, aplicando habilidades narrativas, ética profesional
+              y análisis cualitativo y cuantitativo.</p>
+          </div>
+        </article>
+
+        <article class="miembro-card" tabindex="0">
+          <img src="img/Nicolasbohorquez.jpg" alt="Nicolás Bohórquez Tejada" loading="lazy">
+          <div class="miembro-info">
+            <span class="rol">Ingeniería en ciencia de datos</span>
+            <h3>Nicolás Bohórquez Tejada</h3>
+            <p class="bio">Estudiante de octavo semestre de Ingeniería en Ciencia de Datos. Brinda soporte al
+              semillero en temas de visualización de datos y codificación de los mismos.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="cta-band reveal">
+      <h2>¿Te interesa investigar con nosotros?</h2>
+      <p>Buscamos estudiantes curiosos de cualquier disciplina con ganas de pensar críticamente
+         la comunicación digital.</p>
+      <div class="buttons">
+        <a href="mailto:semillerocpd@gmail.com" class="btn primary">Escríbenos</a>
+        <a href="objetivos.html" class="btn secondary">Ver objetivos</a>
+      </div>
+      <span class="tagline">Somos diferentes, somos Poli.</span>
+    </section>
+
+  </div>
+  </main>
+
+
   <footer>
     <div class="footer-container">
       <div class="footer-left">
@@ -172,8 +321,21 @@
       </div>
       <div class="footer-contact">
         <h4>Contacto</h4>
-        <p>📧 semillerocpd@gmail.com</p>
-        <p>📍 Edificio de Investigación<br> Politécnico Grancolombiano Institución Universitaria<br> Bogotá, Colombia
+        <p class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/>
+            <path d="M3 6.5l9 6 9-6"/>
+          </svg>
+          <a href="mailto:semillerocpd@gmail.com">semillerocpd@gmail.com</a>
+        </p>
+        <p class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+          <span>Edificio de Investigación<br>Politécnico Grancolombiano<br>Bogotá, Colombia</span>
         </p>
       </div>
     </div>
@@ -184,43 +346,79 @@
   </footer>
 
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
     particlesJS("particles-js", {
       "particles": {
-        "number": { "value": 30 },
-        "color": { "value": ["#1FB2DE"] }, 
+        "number": { "value": 34 },
+        "color": { "value": ["#1FB2DE", "#A6CE38"] },
         "shape": { "type": "circle" },
-        "opacity": { "value": 0.7 },
+        "opacity": { "value": 0.5, "random": true },
         "size": { "value": 4, "random": true },
-        "move": { "enable": true, "speed": 0.5, "direction": "none", "out_mode": "out" }
+        "line_linked": { "enable": true, "distance": 150, "color": "#1FB2DE", "opacity": 0.12, "width": 1 },
+        "move": { "enable": true, "speed": 0.6, "direction": "none", "out_mode": "out" }
       },
       "retina_detect": true
     });
   </script>
   <script>
+    // Header al hacer scroll
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.style.background = '#0A263D';
-        header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
-      } else {
-        header.style.background = '#0F385A';
-        header.style.boxShadow = 'none';
-      }
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Menú móvil
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+      });
+      navLinks.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        })
+      );
+    }
+
+    // Animación reveal al hacer scroll (reemplaza AOS)
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Tarjetas de objetivos expandibles
+    document.querySelectorAll('.objetivo-card').forEach(card => {
+      card.addEventListener('click', () => card.classList.toggle('active'));
     });
 
-  
-    const cards = document.querySelectorAll('.objetivo-card');
-    cards.forEach(card => {
-      card.addEventListener('click', () => {
-        card.classList.toggle('active');
+    // Contador animado de cifras
+    const counters = document.querySelectorAll('.stat .num[data-count]');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        countObserver.unobserve(el);
+        const target = parseInt(el.dataset.count, 10);
+        if (reduce) { el.textContent = target; return; }
+        const duration = 1400;
+        const start = performance.now();
+        const tick = (now) => {
+          const p = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased);
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
       });
-    });
+    }, { threshold: 0.5 });
+    counters.forEach(c => countObserver.observe(c));
   </script>
 </body>
 
