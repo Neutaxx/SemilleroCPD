@@ -1,6 +1,9 @@
 # Configuración local del entorno de desarrollo
 .claude/
 
+# Copia de seguridad de las imágenes sin comprimir (solo local)
+img/_originales/
+
 # Sistema operativo
 Thumbs.db
 desktop.ini

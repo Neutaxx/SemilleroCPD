@@ -1385,6 +1385,39 @@ header.scrolled {
 }
 .contenido-card:hover .card-thumb::after { background: linear-gradient(180deg, rgba(10, 38, 61, 0.2), rgba(10, 38, 61, 0.7)); }
 
+/* Portada generada para los reels (Instagram no permite usar su miniatura) */
+.card-thumb.cover {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(120% 120% at 20% 0%,
+      color-mix(in srgb, var(--accent, var(--poli-cyan)) 42%, transparent) 0%, transparent 60%),
+    linear-gradient(135deg, #14456b 0%, var(--poli-blue-deep) 100%);
+}
+.card-thumb.cover::after { background: none; }
+.cover-mark {
+  position: absolute;
+  right: -14%;
+  bottom: -28%;
+  width: 62%;
+  opacity: 0.09;
+  pointer-events: none;
+}
+.cover-play {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--accent, var(--poli-cyan)) 88%, transparent);
+  color: var(--poli-blue-deep);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s var(--ease);
+  z-index: 1;
+}
+.cover-play svg { width: 24px; height: 24px; margin-left: 3px; }
+.contenido-card:hover .cover-play { transform: scale(1.12); }
+
 /* Etiqueta de tipo */
 .card-type {
   position: absolute;
@@ -1803,14 +1836,20 @@ header.scrolled {
   margin: 10px 0 0;
   letter-spacing: -0.02em;
 }
-.proj-prose p {
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.85;
-  margin: 0 0 20px;
-  font-size: 1.03rem;
+/* Texto corrido unificado en toda la página de proyecto */
+.proj-prose p,
+.spec p,
+.act-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.82);
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;            /* evita huecos grandes al justificar en español */
+  -webkit-hyphens: auto;
 }
+.proj-prose p { margin: 0 0 20px; }
 .proj-prose p:last-child { margin-bottom: 0; }
-.proj-prose p:first-child { font-size: 1.14rem; color: rgba(255, 255, 255, 0.92); }
 
 /* --- Objetivos específicos --- */
 .spec-list { display: grid; gap: 2px; }
@@ -1834,7 +1873,7 @@ header.scrolled {
 .spec:nth-child(2) .spec-num { color: var(--poli-green); }
 .spec:nth-child(3) .spec-num { color: var(--poli-yellow); }
 .spec:nth-child(4) .spec-num { color: var(--poli-magenta); }
-.spec p { margin: 0; color: rgba(255, 255, 255, 0.8); line-height: 1.7; }
+.spec p { margin: 0; }
 
 /* ============================================================
    ACTIVIDADES Y EVIDENCIAS (bloques alternos)
@@ -1866,12 +1905,7 @@ header.scrolled {
   margin: 0 0 18px;
   letter-spacing: -0.02em;
 }
-.act-text p {
-  color: rgba(255, 255, 255, 0.78);
-  line-height: 1.8;
-  margin: 0 0 15px;
-  font-size: 0.99rem;
-}
+.act-text p { margin: 0 0 15px; }
 .act-text p:last-child { margin-bottom: 0; }
 
 /* ============================================================
@@ -2046,6 +2080,119 @@ header.scrolled {
 }
 
 /* ============================================================
+   BLOQUE DE CONTACTO (dos correos)
+   ============================================================ */
+.mails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 18px;
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.mail-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 18px 18px 20px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  text-align: left;
+  transition: transform 0.35s var(--ease), background 0.35s, border-color 0.35s;
+}
+.mail-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: color-mix(in srgb, var(--accent, var(--poli-cyan)) 45%, transparent);
+}
+.mail-ico {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--accent, var(--poli-cyan)) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent, var(--poli-cyan)) 40%, transparent);
+  color: var(--accent, var(--poli-cyan));
+}
+.mail-ico svg { width: 20px; height: 20px; }
+
+.mail-texto { flex: 1; min-width: 0; }
+.mail-rol {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 4px;
+}
+.mail-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  word-break: break-all;
+  transition: color 0.25s;
+}
+.mail-link:hover { color: var(--accent, var(--poli-cyan)); text-decoration: underline; }
+
+.mail-copy {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.75);
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  position: relative;
+}
+.mail-copy svg { width: 17px; height: 17px; }
+.mail-copy:hover {
+  background: var(--accent, var(--poli-cyan));
+  border-color: transparent;
+  color: var(--poli-blue-deep);
+}
+.mail-copy.copiado {
+  background: var(--poli-green);
+  border-color: transparent;
+  color: var(--poli-blue-deep);
+}
+/* Aviso de "copiado" */
+.mail-copy::after {
+  content: '¡Copiado!';
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--poli-green);
+  color: var(--poli-blue-deep);
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s var(--ease);
+}
+.mail-copy.copiado::after { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+@media (max-width: 480px) {
+  .mail-card { padding: 14px; gap: 11px; }
+  .mail-link { font-size: 0.88rem; }
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 footer {
@@ -2133,6 +2280,83 @@ footer {
   transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ============================================================
+   TIPOGRAFÍA UNIFICADA DE TODO EL SITIO
+   Un solo tamaño para el texto corrido y otro para las
+   entradillas. Todo el texto de párrafo va justificado con
+   guionado automático (necesario en español para que la
+   justificación no abra huecos entre palabras).
+   ============================================================ */
+
+/* --- Texto corrido: 1rem, justificado --- */
+.linea-card p,
+.miembro-card .bio,
+.miembro-lider-texto p,
+.obj-short,
+.qa p,
+.tl-body p,
+.tl-full p,
+.modal-body p,
+.pilar p,
+.persona-info p,
+.about-intro p,
+.objetivo-linea p,
+.footer-left p,
+.proj-prose p,
+.spec p,
+.act-text p {
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* --- Entradillas: un pelo mayores, en bandera --- */
+.page-head .page-lead,
+.hero-foot .lead,
+.about-intro .lead-xl {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  text-align: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* --- Texto centrado por diseño: se mantiene centrado --- */
+.section-head p,
+.cta-band p,
+.tl-hint {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+  hyphens: manual;
+}
+.tl-hint { text-align: left; }
+
+/* En pantallas estrechas la justificación abre huecos: se desactiva */
+@media (max-width: 560px) {
+  .linea-card p,
+  .miembro-card .bio,
+  .miembro-lider-texto p,
+  .obj-short,
+  .qa p,
+  .tl-body p,
+  .tl-full p,
+  .modal-body p,
+  .pilar p,
+  .persona-info p,
+  .about-intro p,
+  .objetivo-linea p,
+  .footer-left p,
+  .proj-prose p,
+  .spec p,
+  .act-text p {
+    text-align: left;
+  }
+}
 
 /* ============================================================
    RESPONSIVE
